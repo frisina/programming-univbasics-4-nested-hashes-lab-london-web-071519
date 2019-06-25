@@ -25,22 +25,8 @@ def alan_kay_is_known_for
 end
 
 def dennis_ritchies_language
-	programmer_hash =
- 		{
-        :grace_hopper => {
-          :known_for => "COBOL",
-          :languages => ["COBOL", "FORTRAN"]
-        },
-        :alan_kay => {
-          :known_for => "Object Orientation",
-          :languages => ["Smalltalk", "LISP"]
-        },
-        :dennis_ritchie => {
-          :known_for => "Unix",
-          :languages => ["C"]
-        }
-     }
-end
+	programmer_hash[:dennis_ritchie][:languages]
+	
 
 def adding_matz
 # add the following information to the top level of programmer_hash
