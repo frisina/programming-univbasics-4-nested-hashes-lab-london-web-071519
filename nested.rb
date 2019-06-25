@@ -29,6 +29,9 @@ def dennis_ritchies_language
 end
 
 def adding_matz
+	programmer_hash[:yukihiro_matsumoto][:known_for] = "ruby"
+	programmer_hash[:yukihiro_matsumoto][:languages] = ["LISP", "C"]
+end
 # add the following information to the top level of programmer_hash
 # :yukihiro_matsumoto => {
 #   :known_for => "Ruby",
