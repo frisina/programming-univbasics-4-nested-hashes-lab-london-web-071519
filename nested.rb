@@ -77,10 +77,12 @@ def adding_matz
 				}
 		 }
 
-	programmer_hash[:yukihiro_matsumoto][:known_for] = "ruby"
-	programmer_hash[:yukihiro_matsumoto][:languages] = ["LISP", "C"]
+new_programmer_hash = {yukihiro_matsumoto: {known_for: "ruby", languages: ["LISP", "C"]}}.merge(programmer_hash)
 
-	return programmer_hash[:yukihiro_matsumoto]
+	#programmer_hash[:yukihiro_matsumoto][:known_for] = "ruby"
+	#programmer_hash[:yukihiro_matsumoto][:languages] = ["LISP", "C"]
+
+	return new_programmer_hash
 end
 # add the following information to the top level of programmer_hash
 # :yukihiro_matsumoto => {
